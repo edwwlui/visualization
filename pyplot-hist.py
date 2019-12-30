@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 name="informal_sent_len"
+#single col of values
 data=pd.read_csv(name+".txt")
 data.plot(kind='hist',range=[0,40],bins=20)
 plt.xlabel('Sentence Length')
